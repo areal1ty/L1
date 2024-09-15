@@ -12,7 +12,7 @@ impl Action for Person {
     }
 }
 
-fn run() {
+pub fn run() {
     let person = Person {
         name: String::from("Alice"),
     };
