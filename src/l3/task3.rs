@@ -6,8 +6,7 @@ pub fn run(n: u32) {
     numbers.into_iter()
         .map(|num| {
             thread::spawn(move || {
-              //  println!("{}^2 = {}", num, num * num);
-                println!("{}^2 + {}^2 = {}", num, num, num)
+                println!("{}^2 + {}^2 = {}", num, num, (num*num) + (num*num))
             })
         })
         .for_each(|handle| handle.join().unwrap());
