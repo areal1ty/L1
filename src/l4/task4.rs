@@ -30,7 +30,6 @@ pub fn run() {
     let (tx, rx) = mpsc::channel();
     let rx = Arc::new(Mutex::new(rx));
 
-    // Запуск воркеров
     let num_workers = 4;
     start_workers(num_workers, Arc::clone(&rx));
 
