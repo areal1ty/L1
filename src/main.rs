@@ -37,8 +37,8 @@ fn main() {
     //task2::run(10);
     //task3::run(10);
     // task4::run();
-    // task5::run();
-    task6::run();
+    task5::run();
+    // task6::run();
     // println!("{}", task24::run("abcd"));
     // let mut v = vec![10, 20, 30, 40, 50];
     // println!("Vector without deleted element {:?} is {:?}", task22::remove_element_at(&mut v, 2), v);
